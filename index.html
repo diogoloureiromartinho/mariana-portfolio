@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mariana Silva, architecture portfolio. Selected works from 2020 to 2026."
+    />
+    <meta name="theme-color" content="#F8F7F4" />
+    <title>Mariana Silva — Architecture Portfolio</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/projects/hero-watercolor.webp"
+      imagesrcset="/assets/projects/hero-watercolor-840.webp 840w, /assets/projects/hero-watercolor.webp 1400w"
+      imagesizes="(max-width: 700px) 86vw, (max-width: 900px) min(24rem, 72vw), 34rem"
+      fetchpriority="high"
+    />
+    <script>
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("js");
+      }
+    </script>
+    <style>
+      .js .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#works">Skip to selected works</a>
+
+    <header class="nav" id="top">
+      <a class="nav__mark" href="#hero">Mariana Silva</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#works">Selected Works</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero__intro reveal">
+          <p class="eyebrow">Architecture / Selected Works</p>
+          <h1 class="hero__title" id="hero-title">Mariana<br />Silva</h1>
+          <p class="hero__subtitle">Architecture Portfolio</p>
+        </div>
+
+        <div class="hero__visual reveal" style="--reveal-delay: 80ms">
+          <figure
+            class="frame"
+            data-asset="heroWatercolor"
+            style="--frame-ratio: 3 / 4; --frame-bg: #e6d9cc"
+          >
+            <div class="frame__placeholder">
+              <span class="frame__marks" aria-hidden="true"></span>
+              <span class="frame__cross" aria-hidden="true"></span>
+              <p class="frame__label">Watercolour — Cover</p>
+            </div>
+          </figure>
+        </div>
+
+        <div class="hero__foot reveal" style="--reveal-delay: 140ms">
+          <p class="hero__meta">
+            <span>2020 — 2026</span>
+            <span>Copenhagen, Denmark</span>
+          </p>
+          <a class="scroll-hint" href="#works">
+            <span class="scroll-hint__line" aria-hidden="true"></span>
+            <span>Scroll</span>
+          </a>
+        </div>
+      </section>
+
+      <div id="works-root">
+        <noscript>
+          <section class="wrap noscript-works">
+            <h2>Selected Works</h2>
+            <article>
+              <h3>01 — DTU Building</h3>
+              <p>Educational Building, Copenhagen, 2025.</p>
+              <p>
+                Located at the Technical University of Denmark, this proposal
+                explores the relationship between structure, façade and spatial
+                organisation. A modular system defines flexible learning
+                environments while maximising daylight, adaptability and
+                construction efficiency.
+              </p>
+            </article>
+            <article>
+              <h3>02 — TerraVista</h3>
+              <p>Modular Housing, Cape Verde, 2024.</p>
+              <p>
+                TerraVista is a modular housing proposal that combines rammed
+                earth construction, locally sourced materials and passive
+                environmental strategies. Designed to be easily built, expanded
+                and maintained by local communities, it adapts to both the
+                climate and the changing needs of its inhabitants.
+              </p>
+            </article>
+            <article>
+              <h3>03 — Housing in Cascais</h3>
+              <p>Residential, Lisbon, 2020.</p>
+              <p>
+                Located in Aldeia da Areia, Cascais, this project proposes a
+                residential community where shared and private courtyards
+                define the relationship between architecture and landscape.
+                Each dwelling is organised around its own outdoor space,
+                creating a sequence of light-filled interiors while ensuring
+                privacy, spatial continuity and a strong connection to nature.
+              </p>
+            </article>
+            <article>
+              <h3>04 — Comparative Analysis of Bioclimatic Techniques</h3>
+              <p>Master’s Thesis, Lisbon and Copenhagen, 2026.</p>
+              <p>
+                This thesis investigates how bioclimatic techniques adapt to
+                different climatic conditions through a comparative analysis of
+                38 residential projects and two detailed case studies in
+                Portugal and Denmark.
+              </p>
+            </article>
+          </section>
+        </noscript>
+      </div>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="wrap about__grid">
+          <h2 class="about__label" id="about-title">About</h2>
+          <div class="about__body reveal">
+            <p class="about__lead">Selected works,<br />2020—2026.</p>
+            <p>
+              Four projects from the portfolio: an educational building in
+              Copenhagen, modular housing in Cape Verde, housing in Cascais,
+              and a master’s thesis comparing bioclimatic techniques in Lisbon
+              and Copenhagen.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div class="footer__identity">
+          <p class="footer__name">Mariana Silva</p>
+          <p>Copenhagen</p>
+          <p>2026</p>
+        </div>
+        <div class="footer__optional" data-optional-links></div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#works">Selected Works</a>
+          <a href="#about">About</a>
+          <a href="#hero">Top</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

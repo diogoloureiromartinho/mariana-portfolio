@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F8F7F4" />
+    <title>Project — Mariana Silva</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.documentElement.classList.add("js");
+      }
+    </script>
+    <style>
+      .js .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    </style>
+  </head>
+  <body class="is-detail">
+    <a class="skip" href="#project">Skip to project</a>
+
+    <header class="nav" id="top">
+      <a class="nav__mark" href="index.html">Mariana Silva</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#works">Selected Works</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main id="project"></main>
+
+    <dialog class="viewer" id="viewer" aria-label="Image">
+      <button type="button" class="viewer__close" data-viewer-close>Close</button>
+      <div class="viewer__stage"></div>
+    </dialog>
+
+    <script type="module" src="/src/project.js"></script>
+  </body>
+</html>

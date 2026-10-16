@@ -1,0 +1,38 @@
+---
+description: Keep the Mariana Silva portfolio in its existing files and art direction
+alwaysApply: true
+---
+
+# Portfolio structure
+
+Read `README.md` before editing. It is the project plan. This rule is how to place the work.
+
+Stay in the current files. Do not add a framework, a dependency, a router, a new page, or a component folder.
+
+- Homepage markup: `index.html`. Homepage rendering: `src/main.js`.
+- Detail markup: `project.html`. Detail rendering: `src/project.js`. One template for every project, chosen with `?slug=`.
+- Shared frame, asset, nav, and reveal behaviour: `src/lib.js`.
+- All CSS: `src/styles/main.css`. Detail selectors stay under `.is-detail` so the homepage does not change.
+- Copy and section order: `src/data/projects.js`.
+- Image paths, ratios, fit, and alt text: `src/data/assets.js` only.
+- PDF, email, and phone: `src/data/site.js`. Leave a field `null` until a real value is given.
+- Browser files: `public/assets/projects/`. Untouched masters: `reference/source-assets/`.
+- Facts come from `reference/Mariana_Silva_Architecture_Portfolio_2026.pdf`. Do not invent copy or imagery.
+
+`vite.config.js` must keep both `index.html` and `project.html` as build inputs.
+
+A missing image stays `src: null`. That must not create an `img` or a network request. Set `src` only after the file is in `public/`.
+
+```js
+// src/data/assets.js — add the export here, not in the HTML
+dtuPlans: {
+  src: "/assets/projects/dtu-plans.webp",
+  width: 2400,
+  height: 1600,
+  ratio: "2400 / 1600",
+  fit: "contain",
+  alt: "DTU Building ground floor plan and office floor plan",
+}
+```
+
+Drawings use `contain`. Renders use `cover` with a ratio that matches the file. Do not crop linework. Do not redesign the homepage to fit a new asset.
